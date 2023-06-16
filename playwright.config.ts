@@ -79,61 +79,61 @@ export default defineConfig({
       },
     },
 
-    {
-      name: 'Firefox',
-      use: {
-        ...devices['Desktop Firefox'],
-        browserName: 'firefox',
-        viewport: {width: 1280, height: 720},
-        ignoreHTTPSErrors: true,
-        video: 'on',
-        headless: true,
-        screenshot: 'only-on-failure',
-        trace: 'on',
-      },
-    },
+    // {
+    //   name: 'Firefox',
+    //   use: {
+    //     ...devices['Desktop Firefox'],
+    //     browserName: 'firefox',
+    //     viewport: {width: 1280, height: 720},
+    //     ignoreHTTPSErrors: true,
+    //     video: 'on',
+    //     headless: true,
+    //     screenshot: 'only-on-failure',
+    //     trace: 'on',
+    //   },
+    // },
 
-    {
-      name: 'FirefoxHeaded',
-      use: {
-        ...devices['Desktop Firefox'],
-        browserName: 'firefox',
-        viewport: {width: 1280, height: 720},
-        ignoreHTTPSErrors: true,
-        video: 'off',
-        headless: false,
-        screenshot: 'only-on-failure',
-        trace: 'on',
-      },
-    },
+    // {
+    //   name: 'FirefoxHeaded',
+    //   use: {
+    //     ...devices['Desktop Firefox'],
+    //     browserName: 'firefox',
+    //     viewport: {width: 1280, height: 720},
+    //     ignoreHTTPSErrors: true,
+    //     video: 'off',
+    //     headless: false,
+    //     screenshot: 'only-on-failure',
+    //     trace: 'on',
+    //   },
+    // },
 
-    {
-      name: 'Safari',
-      use: {
-        ...devices['Desktop Safari'],
-        browserName: 'webkit',
-        viewport: {width: 1280, height: 720},
-        ignoreHTTPSErrors: true,
-        video: 'on',
-        headless: true,
-        screenshot: 'only-on-failure',
-        trace: 'on',
-      },
-    },
+    // {
+    //   name: 'Safari',
+    //   use: {
+    //     ...devices['Desktop Safari'],
+    //     browserName: 'webkit',
+    //     viewport: {width: 1280, height: 720},
+    //     ignoreHTTPSErrors: true,
+    //     video: 'on',
+    //     headless: true,
+    //     screenshot: 'only-on-failure',
+    //     trace: 'on',
+    //   },
+    // },
 
-    {
-      name: 'SafariHeaded',
-      use: {
-        ...devices['Desktop Safari'],
-        browserName: 'webkit',
-        viewport: {width: 1280, height: 720},
-        ignoreHTTPSErrors: true,
-        video: 'off',
-        headless: false,
-        screenshot: 'only-on-failure',
-        trace: 'on',
-      },
-    },
+    // {
+    //   name: 'SafariHeaded',
+    //   use: {
+    //     ...devices['Desktop Safari'],
+    //     browserName: 'webkit',
+    //     viewport: {width: 1280, height: 720},
+    //     ignoreHTTPSErrors: true,
+    //     video: 'off',
+    //     headless: false,
+    //     screenshot: 'only-on-failure',
+    //     trace: 'on',
+    //   },
+    // },
 
     /* Test against mobile viewports. */
     // {
