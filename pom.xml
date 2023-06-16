@@ -42,29 +42,4 @@
     <jenkins.version>2.249.3</jenkins.version>
     <maven-jenkins-plugin.version>3.0.1</maven-jenkins-plugin.version>
   </properties>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.jenkins-ci.tools</groupId>
-        <artifactId>maven-jenkins-plugin</artifactId>
-        <version>${maven-jenkins-plugin.version}</version>
-        <executions>
-          <execution>
-            <id>jenkins-deploy</id>
-            <goals>
-              <goal>deploy</goal>
-            </goals>
-            <configuration>
-              <jenkinsUrl>http://localhost:8080/</jenkinsUrl>
-              <jobName>Playwright</jobName>
-              <fileName>target/C:\Users\DELL\.m2\repository\junit\junit\4.12</fileName>
-              <autoClean>true</autoClean>
-              <autoDeploy>true</autoDeploy>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
-  </build>
 </project>
