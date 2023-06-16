@@ -6,7 +6,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <!-- Project metadata -->
-  <groupId>com.eforms/</groupId>
+  <groupId>com.mobinexteforms/</groupId>
   <artifactId>utilities</artifactId>
   <version>1.0.0</version>
   <name>eForms</name>
