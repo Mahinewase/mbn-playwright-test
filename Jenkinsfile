@@ -1,6 +1,11 @@
 pipeline {
   agent any
   stages {
+    stage('Build') {
+      steps {
+        sh 'make build'
+      }
+    }
     stage('help') {
       steps {
         sh 'npx playwright test --help'
