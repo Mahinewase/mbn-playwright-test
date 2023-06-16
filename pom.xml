@@ -6,10 +6,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <!-- Project metadata -->
-  <groupId>com.example</groupId>
-  <artifactId>my-project</artifactId>
+  <groupId>com.http://win-6cgsdmg51od:8500/</groupId>
+  <artifactId>eForms</artifactId>
   <version>1.0.0</version>
-  <name>My Project</name>
+  <name>eForms</name>
   <description>A sample Maven project</description>
 
   <!-- Project dependencies -->
@@ -57,8 +57,8 @@
             </goals>
             <configuration>
               <jenkinsUrl>http://localhost:8080/</jenkinsUrl>
-              <jobName>my-job</jobName>
-              <fileName>target/my-project.jar</fileName>
+              <jobName>Playwright</jobName>
+              <fileName>target/C:\Users\DELL\.m2\repository\junit\junit\4.12</fileName>
               <autoClean>true</autoClean>
               <autoDeploy>true</autoDeploy>
             </configuration>
