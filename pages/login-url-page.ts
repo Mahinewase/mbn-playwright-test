@@ -10,7 +10,7 @@ export class LoginUrlPage{
     }
 
     async eFormLoginUrl(){
-        await this.page.goto("http://win-6cgsdmg51od:8500gdg/");
+        await this.page.goto("http://win-6cgsdmg51od:8500/");
     }
     
 }
