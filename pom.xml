@@ -6,8 +6,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <!-- Project metadata -->
-  <groupId>com.http://win-6cgsdmg51od:8500/</groupId>
-  <artifactId>eForms</artifactId>
+  <groupId>com.eforms/</groupId>
+  <artifactId>utilities</artifactId>
   <version>1.0.0</version>
   <name>eForms</name>
   <description>A sample Maven project</description>
