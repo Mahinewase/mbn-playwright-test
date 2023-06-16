@@ -1,12 +1,12 @@
 pipeline {
-    agent any
-    stages {
-      stage('install playwright') {
-        steps {
-          sh '''
-           npm i -D @playwright/test
-           npx playwright install
-         '''
+  agent any
+  stages {
+    stage('install playwright') {
+      steps {
+        sh '''
+          npm i -D @playwright/test
+          npx playwright install
+        '''
       }
     }
     stage('help') {
@@ -14,19 +14,18 @@ pipeline {
         sh 'npx playwright test --help'
       }
     }
-        stage('Build') {
-            steps {
-                sh 'make build'
-            }
-        }
-       stage('test') {
+    stage('Build') {
+      steps {
+        sh 'make build'
+      }
+    }
+    stage('test') {
       steps {
         sh '''
           npx playwright test --list
           npx playwright test
         '''
-          }
-        }
+      }
     }
-      
+  }
 }
