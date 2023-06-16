@@ -19,7 +19,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        bat 'make build'
+        bat 'mvn clean install'
       }
     }
     stage('Test') {
