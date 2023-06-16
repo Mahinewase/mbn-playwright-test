@@ -15,7 +15,7 @@ export default defineConfig({
   fullyParallel: true,
 
   /* Maximum time one test can run for. */
-  timeout: 30 * 1000,
+  timeout: 5 * 1000,
 
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
@@ -46,7 +46,7 @@ export default defineConfig({
      * Maximum time expect() should wait for the condition to be met.
      * For example in `await expect(locator).toHaveText();`
      */
-    timeout: 7000,
+    timeout: 15000,
   },
 
   /* Configure projects for major browsers */
