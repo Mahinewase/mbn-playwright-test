@@ -1,28 +1,34 @@
 pipeline {
   agent any
+  
   stages {
-    stage('Build') {
-      steps {
-        sh 'make build'
-      }
+     stage('Maven Build') {  
+      steps {  
+                sh 'mvn clean install'  
+            }  
+     }
+     stage('Maven Test') {
+            steps {
+                sh 'mvn test'
+            }
+     }
+     stage('Maven Package') {
+            steps {
+                sh 'mvn package'  
+            }
+     }  
+     stage('Build') {  
+      steps {  
+        sh 'make build'  
+      } 
     }
-    stage('help') {
-      steps {
-        sh 'npx playwright test --help'
+    stage('test') {  
+      steps {  
+        sh 'npx playwright test --list'  
       }
-    }
-    stage('Build') {
-      steps {
-        sh 'make build'
+      steps {  
+        sh 'npx playwright test'  
       }
-    }
-    stage('test') {
-      steps {
-        sh '''
-          npx playwright test --list
-          npx playwright test
-        '''
-      }
-    }
+    } 
   }
 }
