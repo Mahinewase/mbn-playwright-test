@@ -57,7 +57,7 @@ export default defineConfig({
         ...devices['Desktop Chrome'],
         browserName: 'chromium',
         viewport: {width: 1280, height: 720},
-        ignoreHTTPSErrors: false,
+        ignoreHTTPSErrors: true,
         video: 'on',
         headless: true,
         screenshot: 'only-on-failure',
@@ -65,4 +65,4 @@ export default defineConfig({
        }
      } 
    ]
-  }
+}
