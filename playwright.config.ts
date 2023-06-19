@@ -64,7 +64,5 @@ export default defineConfig({
         trace: 'on',
     }
   } 
-  ]
+ ]
 }
-
-                            
