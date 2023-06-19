@@ -51,17 +51,12 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'Chrome',
-      use: {
-        ...devices['Desktop Chrome'],
-        browserName: 'chromium',
-        viewport: { width: 1280, height: 720 },
-        ignoreHTTPSErrors: true,
-        video: 'on',
-        headless: true,
-        screenshot: 'only-on-failure',
-        trace: 'on',
-      },
+      name: 'Microsoft Edge',
+      use: { ...devices['Desktop Edge'], channel: 'msedge' },
+    },
+    {
+      name: 'Google Chrome',
+      use: { ...devices['Desktop Chrome'], channel: 'chrome' },
     },
   ],
 });
