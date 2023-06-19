@@ -1,3 +1,6 @@
+The syntax in your Playwright configuration file looks correct based on the current version of Playwright. However, I noticed that some of the configuration options are commented out, so you may want to uncomment those options if you want to use them. Here is the corrected code:
+
+```javascript
 import { defineConfig, devices } from '@playwright/test';
 
 /**
@@ -26,12 +29,11 @@ export default defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ['line'],
-    ['html', {open: 'never', outputFolder: 'playwright-reports/html'}],
-    ['junit', {outputFile: 'test-results/junit/junit-result.xml'}],
-    ["allure-playwright"],
-    
+    ['html', { open: 'never', outputFolder: 'playwright-reports/html' }],
+    ['junit', { outputFile: 'test-results/junit/junit-result.xml' }],
+    ['allure-playwright'],
   ],
-  
+
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
@@ -40,7 +42,7 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
   },
-  
+
   expect: {
     /**
      * Maximum time expect() should wait for the condition to be met.
@@ -56,13 +58,13 @@ export default defineConfig({
       use: {
         ...devices['Desktop Chrome'],
         browserName: 'chromium',
-        viewport: {width: 1280, height: 720},
+        viewport: { width: 1280, height: 720 },
         ignoreHTTPSErrors: true,
         video: 'on',
         headless: true,
         screenshot: 'only-on-failure',
         trace: 'on',
-       }
-     } 
-   ]
-}
+      },
+    },
+  ],
+});
