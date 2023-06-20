@@ -10,7 +10,7 @@ export class LoginUrlPage{
     }
 
     async eFormLoginUrl(){
-        await this.page.goto("https://aws.amazon.com/?nc2=h_lg");
+        await this.page.goto("https://win-6cgsdmg51od:8500/");
     }
     
 }
